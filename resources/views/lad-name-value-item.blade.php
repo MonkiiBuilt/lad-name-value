@@ -19,7 +19,7 @@
         <div class="form-group">
             <fieldset class="{{ $errors->has('sections.' . $sectionId . '.data.' . $key . '.value') ? 'error' : '' }}">
                 <label for="sections[{{ $sectionId }}][data][{{ $key }}][value]">Value</label>
-                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '][value]', $section->data[$key]['value'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '}}][value]', 'class' => 'form-control')) !!}
+                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '][value]', $section->data[$key]['value'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '][value]', 'class' => 'form-control')) !!}
                 <div class="form__error">{{ $errors->first('sections.' . $sectionId . '.data.' . $key . '.value') }}</div>
             </fieldset>
         </div>
@@ -28,7 +28,7 @@
         <div class="form-group">
             <fieldset class="{{ $errors->has('sections.' . $sectionId . '.data.' . $key . '.unit') ? 'error' : '' }}">
                 <label for="sections[{{ $sectionId }}][data][{{ $key }}][unit]">Unit</label>
-                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '}}][unit]', $section->data[$key]['unit'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '][unit]', 'class' => 'form-control')) !!}
+                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '][unit]', $section->data[$key]['unit'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '][unit]', 'class' => 'form-control')) !!}
                 <div class="form__error">{{ $errors->first('sections.' . $sectionId . '.data.' . $key . '.unit') }}</div>
             </fieldset>
         </div>
@@ -37,13 +37,14 @@
         <div class="form-group">
             <fieldset class="{{ $errors->has('sections.' . $sectionId . '.data.' . $key . '.icon') ? 'error' : '' }}">
                 <label for="sections[{{ $sectionId }}][data][{{ $key }}][icon]">Icon</label>
-                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '][icon]', $section->data[$key]['icon'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '}}][icon]', 'class' => 'form-control')) !!}
+                {!! Form::text('sections[' . $sectionId . '][data][' . $key . '][icon]', $section->data[$key]['icon'], array('id' => 'sections[' . $sectionId . '][data][' . $key . '][icon]', 'class' => 'form-control')) !!}
                 <div class="form__error">{{ $errors->first('sections.' . $sectionId . '.data.' . $key . '.icon') }}</div>
                 <span id="" class="help-block">
                     The name of the font-awesome icon that should show for this highlight, e.g. 'ticket'.
                 </span>
             </fieldset>
         </div>
+
     </div>
 </div>
 <!-- Repeatable Highlight block END -->

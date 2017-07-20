@@ -5,8 +5,6 @@
  * @time 9:51 AM
  * @copyright 2008 - present, Monkii Digital Agency (http://monkii.com.au)
  */
-
-
 ?>
 
 <div class="page-section--highlights">
@@ -18,7 +16,7 @@
         <div class="repeatables-list">
             <!-- If the section has data, create a 'carousel-item' for each -->
             @if($section->data)
-                @foreach ($section->data as $slide)
+                @foreach($section->data as $slide)
                     @include('lad-name-value::lad-name-value-item', ['key' => $loop->index, 'sectionId' => $section->id])
                 @endforeach
             @endif
